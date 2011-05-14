@@ -16,6 +16,9 @@ Como não é uma competição, não existem vencedores.
 Depois de terminado o *Desafio de Expressividade*, um post será publicado no VidaGeek.net 
 comentando sobre diversos dos códigos que forem escritos.
 
+Ah, é muito importante que você veja os pull requests das outras pessoas apenas **depois** de escrever o 
+seu, senão você fica viesado e acaba não criando uma solução própria.
+
 O desafio dessa semana é um código para uma variação do problema [Fibonacci Words](http://en.wikipedia.org/wiki/Fibonacci_word).
 
 Boa diversão :D

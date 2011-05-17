@@ -23,6 +23,8 @@ final public class X {
 
 
     private static long x(int i) {
-        return (1L << i);
+        final long l = 1L << i;
+        System.out.println(l);
+        return l;
     }
 }

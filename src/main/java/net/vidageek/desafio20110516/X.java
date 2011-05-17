@@ -23,15 +23,7 @@ final public class X {
             }
             z = b;
         }
-        String a = "01", b = "0";
-        while (n-- > 0) {
-            String c = b;
-            b = a;
-            a = b + c;
-        }
-        final long result = stringToLong(b);
-        assert result == z : result + " => " + z;
-        return result;
+        return z;
     }
 
 

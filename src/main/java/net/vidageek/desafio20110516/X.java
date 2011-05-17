@@ -17,9 +17,9 @@ final public class X {
 
     private static long stringToLong(String binaryDigits) {
         long l = 0;
-        for (int i = 0, j = binaryDigits.length() - 1; i < binaryDigits.length(); i++, j--) {
-            final char digit = binaryDigits.charAt(j);
-            l += digitToInt(digit) * twoRaisedTo(i);
+        for (int i = 0; i < binaryDigits.length(); i++) {
+            final char digit = binaryDigits.charAt(i);
+            l = l * 2 + digitToInt(digit);
         }
         return l;
     }

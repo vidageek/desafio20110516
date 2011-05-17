@@ -16,10 +16,11 @@ final public class X {
 
 
     private static long stringToLong(String binaryDigits) {
+        final int base = 2;
         long l = 0;
         for (int i = 0; i < binaryDigits.length(); i++) {
             final char digit = binaryDigits.charAt(i);
-            l = l * 2 + digitToInt(digit);
+            l = l * base + digitToInt(digit);
         }
         return l;
     }

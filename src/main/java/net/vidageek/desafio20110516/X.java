@@ -11,6 +11,26 @@ final public class X {
             a = "01" + "0";
             assert 1 * 2 + 0 == stringToLong(a);
         }
+        if (n-- > 0) {
+            String c = b;
+            b = a;
+            a = b + c;
+        }
+        if (n-- > 0) {
+            String c = b;
+            b = a;
+            a = b + c;
+        }
+        if (n-- > 0) {
+            String c = b;
+            b = a;
+            a = b + c;
+        }
+        if (n-- > 0) {
+            String c = b;
+            b = a;
+            a = b + c;
+        }
         while (n-- > 0) {
             String c = b;
             b = a;

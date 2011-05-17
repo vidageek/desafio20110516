@@ -16,6 +16,7 @@ final public class X {
     private static long stringToLong(String b) {
         long l = 0;
         for (int i = 0; i < b.length();i++) {
+            assert '0' == (char) 48;
             l += (b.charAt(b.length() - i + -1) - 48) * twoRaisedTo(i);
         }
         return l;

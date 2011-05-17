@@ -10,12 +10,12 @@ final public class X {
 			a = b + c;
 		}
 		assert n == -1;
-		return stringToLong(b, n);
+		return stringToLong(b);
 	}
 
-    private static long stringToLong(String b, int n) {
+    private static long stringToLong(String b) {
         long l = 0;
-		for (int i = 0; i < b.length(); l += (b.charAt(b.length() - i + n) - 48) * (1L << i++)) {
+		for (int i = 0; i < b.length(); l += (b.charAt(b.length() - i + -1) - 48) * (1L << i++)) {
 		}
 		return l;
     }

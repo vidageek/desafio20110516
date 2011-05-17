@@ -4,9 +4,9 @@ final public class X {
     public static long f(int n) {
         String a = "01", b = "0";
         if (n-- > 0) {
-            String c = b;
-            b = a;
-            a = b + c;
+            String c = "0";
+            b = "01";
+            a = "01" + "0";
         }
         while (n-- > 0) {
             String c = b;

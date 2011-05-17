@@ -17,8 +17,8 @@ final public class X {
 
     private static long stringToLong(String b) {
         long l = 0;
-        for (int i = 0; i < b.length();i++) {
-            final char digit = b.charAt(b.length() - i + -1);
+        for (int i = 0; i < b.length(); i++) {
+            final char digit = b.charAt(b.length() - 1 - i);
             l += digitToInt(digit) * twoRaisedTo(i);
         }
         return l;

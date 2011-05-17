@@ -19,9 +19,9 @@ final public class X {
             for (int i = 0; i < n; i++) {
                 long c = b;
                 b = a;
-                a = b * (long) Math.pow(2, fib(i)) + c;
+                a = b * (long) Math.pow(2, fib(i+1)) + c;
             }
-            z = a;
+            z = b;
         }
         String a = "01", b = "0";
         if (n-- > 0) {
@@ -74,7 +74,9 @@ final public class X {
             b = a;
             a = b + c;
         }
-        return stringToLong(b);
+        final long result = stringToLong(b);
+        assert result == z : result + " => " + z;
+        return result;
     }
 
 

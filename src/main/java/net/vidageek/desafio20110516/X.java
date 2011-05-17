@@ -1,6 +1,9 @@
 package net.vidageek.desafio20110516;
 
 final public class X {
+    private static final char LETTER_ZERO = '0';
+
+
     public static long f(int n) {
         String a = "01", b = "0";
         while (n-- > 0) {
@@ -18,9 +21,14 @@ final public class X {
         for (int i = 0; i < b.length();i++) {
             assert '0' == (char) 48;
             final char digit = b.charAt(b.length() - i + -1);
-            l += (digit - '0') * twoRaisedTo(i);
+            l += digitToInt(digit) * twoRaisedTo(i);
         }
         return l;
+    }
+
+
+    private static int digitToInt(final char digit) {
+        return (digit - LETTER_ZERO);
     }
 
 

@@ -18,7 +18,7 @@ final public class X {
         for (int i = 0; i < b.length();i++) {
             assert '0' == (char) 48;
             final char digit = b.charAt(b.length() - i + -1);
-            l += (digit - 48) * twoRaisedTo(i);
+            l += (digit - '0') * twoRaisedTo(i);
         }
         return l;
     }

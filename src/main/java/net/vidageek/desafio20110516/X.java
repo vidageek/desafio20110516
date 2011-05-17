@@ -15,10 +15,10 @@ final public class X {
     }
 
 
-    private static long stringToLong(String b) {
+    private static long stringToLong(String binaryDigits) {
         long l = 0;
-        for (int i = 0, j = b.length() - 1; i < b.length(); i++, j--) {
-            final char digit = b.charAt(j);
+        for (int i = 0, j = binaryDigits.length() - 1; i < binaryDigits.length(); i++, j--) {
+            final char digit = binaryDigits.charAt(j);
             l += digitToInt(digit) * twoRaisedTo(i);
         }
         return l;

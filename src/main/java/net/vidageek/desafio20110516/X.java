@@ -11,7 +11,6 @@ final public class X {
             b = a;
             a = b + c;
         }
-        assert n == -1;
         return stringToLong(b);
     }
 
@@ -19,7 +18,6 @@ final public class X {
     private static long stringToLong(String b) {
         long l = 0;
         for (int i = 0; i < b.length();i++) {
-            assert '0' == (char) 48;
             final char digit = b.charAt(b.length() - i + -1);
             l += digitToInt(digit) * twoRaisedTo(i);
         }

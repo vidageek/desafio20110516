@@ -9,6 +9,7 @@ final public class X {
 			b = a;
 			a = b + c;
 		}
+		assert n == -1;
 		return stringToLong(b, n);
 	}
 

@@ -12,24 +12,36 @@ final public class X {
             assert 1 * 2 + 0 == stringToLong(a);
         }
         if (n-- > 0) {
-            String c = b;
-            b = a;
-            a = b + c;
+            String c = "01";
+            assert 1 == stringToLong(c);
+            b = "010";
+            assert 2 == stringToLong(b);
+            a = "010" + "01";
+            assert 2 * 4 + 1 == stringToLong(a);
         }
         if (n-- > 0) {
-            String c = b;
-            b = a;
-            a = b + c;
+            String c = "010";
+            assert 2 == stringToLong(c);
+            b = "01001";
+            assert 8 + 1 == stringToLong(b);
+            a = "01001" + "010";
+            assert (8 + 1) * 8 + 2 == stringToLong(a);
         }
         if (n-- > 0) {
-            String c = b;
-            b = a;
-            a = b + c;
+            String c = "01001";
+            assert 8 + 1 == stringToLong(c);
+            b = "01001010";
+            assert 64 + 8 + 2 == stringToLong(b);
+            a = "01001010" + "01001";
+            assert (64 + 8 + 2) * 32 + (8 + 1) == stringToLong(a);
         }
         if (n-- > 0) {
-            String c = b;
-            b = a;
-            a = b + c;
+            String c = "01001010";
+            assert 64 + 8 + 2 == stringToLong(c);
+            b = "0100101001001";
+            assert 2048 + 256 + 64 + 8 + 1 == stringToLong(b);
+            a = "0100101001001" + "01001010";
+            assert (2048 + 256 + 64 + 8 + 1) * 256 + (64 + 8 + 2) == stringToLong(a);
         }
         while (n-- > 0) {
             String c = b;

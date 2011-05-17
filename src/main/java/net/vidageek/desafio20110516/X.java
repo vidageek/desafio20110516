@@ -16,15 +16,13 @@ final public class X {
     private static long stringToLong(String b) {
         long l = 0;
         for (int i = 0; i < b.length();i++) {
-            l += (b.charAt(b.length() - i + -1) - 48) * x(i);
+            l += (b.charAt(b.length() - i + -1) - 48) * twoRaisedTo(i);
         }
         return l;
     }
 
 
-    private static long x(int i) {
-        final long l = 1L << i;
-        System.out.println(l);
-        return l;
+    private static long twoRaisedTo(int exponent) {
+        return 1L << exponent;
     }
 }

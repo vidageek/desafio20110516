@@ -13,6 +13,16 @@ final public class X {
 
 
     public static long f(int n) {
+        long z = 0;
+        {
+            long a = 1, b = 0;
+            for (int i = 0; i < n; i++) {
+                long c = b;
+                b = a;
+                a = b * (long) Math.pow(2, fib(i)) + c;
+            }
+            z = a;
+        }
         String a = "01", b = "0";
         if (n-- > 0) {
             String c = "0";

@@ -16,8 +16,13 @@ final public class X {
     private static long stringToLong(String b) {
         long l = 0;
         for (int i = 0; i < b.length();i++) {
-            l += (b.charAt(b.length() - i + -1) - 48) * (1L << i);
+            l += (b.charAt(b.length() - i + -1) - 48) * x(i);
         }
         return l;
+    }
+
+
+    private static long x(int i) {
+        return (1L << i);
     }
 }

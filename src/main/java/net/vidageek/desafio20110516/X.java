@@ -5,8 +5,11 @@ final public class X {
         String a = "01", b = "0";
         if (n-- > 0) {
             String c = "0";
+            assert 0 == stringToLong(c);
             b = "01";
+            assert 1 == stringToLong(b);
             a = "01" + "0";
+            assert 1 * 2 + 0 == stringToLong(a);
         }
         while (n-- > 0) {
             String c = b;

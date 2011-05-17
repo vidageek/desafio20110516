@@ -9,10 +9,14 @@ final public class X {
 			b = a;
 			a = b + c;
 		}
-		long l = 0;
+		return stringToLong(b, n);
+	}
+
+    private static long stringToLong(String b, int n) {
+        long l = 0;
 		for (int i = 0; i < b.length(); l += (b.charAt(b.length() - i + n) - 48) * (1L << i++)) {
 		}
 		return l;
-	}
+    }
 
 }

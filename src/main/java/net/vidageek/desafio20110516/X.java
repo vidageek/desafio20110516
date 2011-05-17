@@ -16,7 +16,7 @@ final public class X {
 
 
     private static long stringToLong(String binaryDigits) {
-        return stringToLong(binaryDigits, 2);
+        return Long.valueOf(binaryDigits, 2);
     }
 
 

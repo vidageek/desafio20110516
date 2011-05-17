@@ -1,6 +1,6 @@
 package net.vidageek.desafio20110516;
 
-final public class X {
+final public class FibToTheFib {
     private static long fib(int n) {
         int a = 0, b = 1;
         while (n-- > 0) {
@@ -12,7 +12,7 @@ final public class X {
     }
 
 
-    public static long f(int n) {
+    public static long fibToTheFib(int n) {
         long a = 0, b = 1;
         for (int i = 0; i < n; i++) {
             long c = b;
